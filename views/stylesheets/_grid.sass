@@ -1,0 +1,87 @@
+//  The following locks in our grid coordinates
+
+!grid_width ||= 960px
+!grid_columns ||= 12
+!grid_pixels ||= 60px
+!grid_gutter_width ||= 20px
+
+=grid(!grid_columns)
+  +column
+  @if !grid_columns == 1
+    width = !grid_pixels
+  @else
+    width = (!grid_columns * !grid_pixels) + (!grid_columns * !grid_gutter_width - !grid_gutter_width)
+
+=column
+  +float-left
+  margin = 0 !grid_gutter_width / 2
+  overflow: hidden
+
+=grid-container(!nested = "nil")
+  @if !nested == "nested"
+    margin: 0
+      left = -!grid_gutter_width / 2
+      right = -!grid_gutter_width / 2
+    display: inline-block
+    width: auto
+  @else
+    margin: 0 auto
+    overflow: hidden
+    width = !grid_width
+    
+=grid-prefix(!grid_columns)
+  @if !grid_columns == 1
+    padding-left = !grid_pixels + !grid_gutter_width
+  @else
+    padding-left = (!grid_columns * !grid_pixels) + (!grid_columns * !grid_gutter_width)
+
+=grid-suffix(!grid_columns)
+  @if !grid_columns == 1
+    padding-right = !grid_pixels + !grid_gutter_width
+  @else
+    padding-right = (!grid_columns * !grid_pixels) + (!grid_columns * !grid_gutter_width)
+
+=grid-full
+  +grid(!grid_columns)
+
+.grid_container
+  +grid-container
+  &.nested
+    +grid-container("nested")
+  .grid
+    &.one
+      +grid(1)
+    &.two
+      +grid(2)
+    &.three
+      +grid(3)
+    &.four
+      +grid(4)
+    &.five
+      +grid(5)
+    &.six
+      +grid(6)
+    &.seven
+      +grid(7)
+    &.eight
+      +grid(8)
+    &.nine
+      +grid(9)
+    &.ten
+      +grid(10)
+    &.eleven
+      +grid(11)
+    &.twelve
+      +grid(12)
+    &.full
+      +grid-full
+  
+  //  Example styling for prototyping a grid with text labels
+  //  As seen here: http://flickr.com/ ...#TODO
+  .example
+    p
+      background: #333 !important
+      border: 1px solid #000 !important
+      color: #fff !important
+      line-height: 70px !important
+      text-align: center !important
