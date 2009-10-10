@@ -1,6 +1,6 @@
 @import blueprint/reset
 @import compass/utilities
-@import grid, library
+@import lib/grid
 
 // Base font
 =base-font
@@ -27,54 +27,4 @@ body
   +base-font
   background: #fff
   color: #0d0d0d
-    
-.wrap
-  +grid-container
-  #content
-    +grid(8)
-    +grid-prefix(2)
-    +grid-suffix(2)
-    margin-top: 100px
-
-#nav_main
-  +clearfix
-  background: #aaa
-  ul, li
-    +float-left
-  li
-    margin-right: 4px
-    a
-      background: #ddd
-      display: block
-      line-height: 34px
-      padding: 0 20px
-      text-decoration: none
-    .tooltip
-      background: #666
-      height: 150px
-      width: 75px
-
-//  Styles for the .feature tooltips
-.tooltip
-  display: none
-
-.qtip-content
-  // background: #F5F5B5
-  // background: rgba(245,245,181,0.95)
-  .tooltip
-    h2
-      font-size: 14px
-      margin-bottom: 10px
-    p
-      font-size: 13px
-      line-height: 1.4
-      margin-bottom: 10px
-      &:last-child
-        margin-bottom: 0
-      &.read_more
-        font-size: 12px
-        line-height: 1.1
-        a
-          font-weight: bold
-          &:hover
-          text-decoration: underline
+  padding: 20px
