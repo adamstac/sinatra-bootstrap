@@ -1,5 +1,3 @@
-require 'grid-coordinates'
-
 if defined?(Sinatra)
   # This is the configuration to use when running within sinatra
   project_path = Sinatra::Application.root

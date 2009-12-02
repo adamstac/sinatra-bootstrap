@@ -17,7 +17,7 @@ set :public, 'public'
 
 # Configure Compass
 configure do
-  Compass.configuration.parse(File.join(Sinatra::Application.root, 'config', 'compass.config'))
+  Compass.configuration.parse(File.join(Sinatra::Application.root, 'config.rb'))
 end
 
 # At a minimum the main sass file must reside within the views directory
