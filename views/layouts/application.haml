@@ -1,4 +1,4 @@
-!!! Strict
+!!! 5
 %html{html_attrs('en-en')}
   %head
     %meta{:'http-equiv' => "Content-Type", :content => "text/html; charset=utf-8"}
@@ -9,5 +9,6 @@
     %script{:type => "text/javascript", :src => "javascripts/plugins/jquery.qtip-1.0.0-rc3.min.js"}
     %script{:type => "text/javascript", :src => "javascripts/site.js"}
   %body
+    = partial :_nav_main
     = yield
     = partial :_analytics
