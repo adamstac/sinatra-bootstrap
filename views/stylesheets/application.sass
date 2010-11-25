@@ -4,8 +4,7 @@
 @import compass/css3
 
 // Base font
-=base-font
-  color: #0d0d0d
+=font-default
   font: 13px Arial, Helvetica, sans-serif
   
 // Links
@@ -18,19 +17,34 @@ a
   &:active
     outline: none
   &:visited
-  
-// Base
-html,
+    // Default style for visited links
+
 body
-  height: 100%
-  margin: 0 0 1px 0
-  padding: 0
-body
-  +base-font
+  +font-default
   background: #fff
-  padding: 20px
-  padding-top: 50px
-  text-align: center
+  color: #0d0d0d
   h1
+    position: absolute
+    top: 50%
+    left: 0
     font-size: 40px
     font-weight: bold
+    margin-top: -40px
+    text-align: center
+    width: 100%
+  ul
+    +border-radius(6px)
+    background: #e7e7e7
+    border: 1px solid #ccc
+    margin-top: 10px
+    margin-left: 10px
+    margin-right: 10px
+    li
+      display: inline
+      line-height: 30px
+      padding: 0 15px
+      a
+        color: #000
+        text-decoration: none
+        &:hover
+          text-decoration: underline
