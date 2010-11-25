@@ -1,4 +1,5 @@
 Gemfile.lock
-.sass-cache
+.bundle/
+.sass-cache/
 .DS_Store
 tmp/**/*
