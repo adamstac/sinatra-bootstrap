@@ -1,2 +1,0 @@
-haml --version '>= 3.04'
-compass --version '>= 0.10.1'
