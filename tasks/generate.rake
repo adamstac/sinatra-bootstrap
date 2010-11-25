@@ -1,9 +1,14 @@
-desc 'Start a new project (specify DIR)'
-task :generate do
-  puts "Invalid directory" unless File.exists?(ENV['DIR'])
+desc 'Generate a new project at dir=foo'
 
-  sh "git archive HEAD | (cd #{ENV['DIR']} && tar -xvf -)"
+task :generate do
+  # Generate the new 'dir' if it's not already created
+  system "mkdir #{(ENV['dir'])}" unless File.exists?(ENV['dir'])
   
-  # remove this rake task from the new project
-  sh "cd #{ENV['DIR']}; rm #{File.join("tasks", "generate.rake")}"
+  # Archive the current HEAD to 'dir'
+  system "git archive HEAD | (cd #{ENV['dir']} && tar -xvf -)"
+  
+  # Remove this rake task from the newly generated project
+  system "cd #{ENV['dir']}; rm #{File.join("tasks", "generate.rake")}"
+
+  puts "\n *** A new project has been generated at: #{(ENV['dir'])} ***"
 end
