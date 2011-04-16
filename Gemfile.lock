@@ -5,6 +5,8 @@ GEM
       haml (>= 3.0.4)
     haml (3.0.24)
     rack (1.2.1)
+    shotgun (0.8)
+      rack (>= 1.0)
     sinatra (1.0)
       rack (>= 1.0)
 
@@ -14,4 +16,5 @@ PLATFORMS
 DEPENDENCIES
   compass (~> 0.10.1)
   haml (~> 3.0)
+  shotgun (~> 0.8)
   sinatra (= 1.0)
