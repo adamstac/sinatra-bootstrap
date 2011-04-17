@@ -3,7 +3,11 @@ GEM
   specs:
     compass (0.10.6)
       haml (>= 3.0.4)
+    grid-coordinates (1.1.3)
+      compass (>= 0.10.5)
     haml (3.0.24)
+    meyer-reset (2.0.0)
+      compass (>= 0.10.5)
     rack (1.2.1)
     shotgun (0.8)
       rack (>= 1.0)
@@ -15,6 +19,8 @@ PLATFORMS
 
 DEPENDENCIES
   compass (~> 0.10.1)
+  grid-coordinates
   haml (~> 3.0)
+  meyer-reset
   shotgun (~> 0.8)
   sinatra (= 1.0)
