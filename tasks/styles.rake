@@ -24,6 +24,11 @@ namespace :styles do
   
   desc "Clear the styles"
   task :clear => ["compile:clear"]
+
+  desc "Watch the styles and compile new changes"
+  task :watch do
+    system "compass watch"
+  end
   
   desc "List the styles"
   task :list do

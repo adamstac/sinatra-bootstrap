@@ -1,0 +1,74 @@
+# Sinatra Bootstrap
+
+## A simple Sinatra starting point
+
+Sinatra Bootstrap supports:
+
+* [Haml](http://haml-lang.com/)
+* [Sass](http://sass-lang.com/)
+* [Compass](https://github.com/chriseppstein/compass)
+* [Grid Coordinates](https://github.com/adamstac/grid-coordinates)
+* [Meyer Reset](https://github.com/adamstac/meyer-reset)
+* [jQuery](http://jquery.com/)
+* [Modernizr](http://www.modernizr.com/)
+
+## What is the purpose of Sinatra Bootstrap?
+
+I created Sinatra Bootstrap in order to have a consistent starting point for my Sinatra projects. I like having Haml, Sass and Compass available to me in every project, likewise jQuery and a few JavaScripts make their way into every production as well. I also include a number of helpful rake tasks. Also, because we compile our
+
+## How do I get started?
+
+First we need to clone Sinatra Bootstrap and run [Bundler](http://gembundler.com/) to get the required gems installed.
+
+If you don't have Bundler installed, run the following at the command prompt:
+
+    gem install bundler
+
+To get started with using Sinatra Bootstrap, fork the repo and pull down a copy from your fork to your local machine. It makes sense to store this where you store your other codes, for example:
+
+    cd Code/path/to/codes
+    git clone git@github.com:USERNAME/sinatra-bootstrap.git
+
+From inside the root of your newly cloned repo, run the following at the command prompt:
+
+    bundle install
+
+## How do I start the application?
+
+After you've ran `bundle install` and Sinatra as well as the other required gems are installed, start it up by running this command:
+
+    # runs `bundle exec shotgun config.ru` behind the scenes
+    rake start
+
+This will start Sinatra Bootstrap on Sinatra's default port 9393 and will now be able to view the application in your web browser at this URL [http://localhost:9393](http://localhost:9393).
+
+You'll also want to open a new terminal window to the same directory and run the Compass watch rake task so we can monitor our Sass files for changes.
+
+    rake styles:watch
+
+Or you just run `compass watch`, either work.
+
+## Helper Rake Tasks
+
+There are a few helper Rake tasks that will aid you in clearing and compiling your Sass/Compass stylesheets. There is also a task to generate a new project at a specified directory so you can keep your copy of the Serve Bootstrap pristine.
+
+    rake -T
+    
+    rake generate                   # Generate a new project at dir=foo
+    rake styles:clear               # Clear the styles
+    rake styles:compile             # Compile new styles
+    rake styles:compile:production  # Compile new styles for production
+    rake styles:list                # List the styles
+    rake styles:stats               # Run compass stats
+    rake styles:stats:log           # Create a log of compass stats
+    rake styles:watch               # Watch the styles and compile new changes
+
+## License
+
+Copyright (c) 2011 Adam Stacoviak
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

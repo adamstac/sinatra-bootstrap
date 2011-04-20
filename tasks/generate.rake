@@ -1,5 +1,4 @@
 desc 'Generate a new project at dir=foo'
-
 task :generate do
   # Generate the new 'dir' if it's not already created
   system "mkdir #{(ENV['dir'])}" unless File.exists?(ENV['dir'])
