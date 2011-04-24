@@ -14,7 +14,7 @@ Sinatra Bootstrap supports:
 
 ## What is the purpose of Sinatra Bootstrap?
 
-I created Sinatra Bootstrap in order to have a consistent starting point for my Sinatra projects. I like having Haml, Sass and Compass available to me in every project, likewise jQuery and a few JavaScripts make their way into every production as well. I also include a number of helpful rake tasks. Also, because we compile our
+I created Sinatra Bootstrap in order to have a consistent starting point for my Sinatra projects. I like having Haml, Sass and Compass available to me in every project, likewise jQuery and a few JavaScripts make their way into every production as well. A number of helpful rake tasks have also been included.
 
 ## How do I get started?
 
@@ -50,11 +50,12 @@ Or you just run `compass watch`, either work.
 
 ## Helper Rake Tasks
 
-There are a few helper Rake tasks that will aid you in clearing and compiling your Sass/Compass stylesheets. There is also a task to generate a new project at a specified directory so you can keep your copy of the Serve Bootstrap pristine.
+There are a few helper Rake tasks that will help you to clear and compile your Sass stylesheets as well as a few other helpful tasks. There is also a generate task, so you can generate a new project at a defined location based on the bootstrap.
 
     rake -T
     
     rake generate                   # Generate a new project at dir=foo
+    rake start                      # Start the application
     rake styles:clear               # Clear the styles
     rake styles:compile             # Compile new styles
     rake styles:compile:production  # Compile new styles for production
