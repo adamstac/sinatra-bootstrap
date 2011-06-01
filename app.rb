@@ -3,7 +3,7 @@ require 'sinatra'
 require 'haml'
 
 # Helpers
-require 'lib/render_partial'
+require './lib/render_partial'
 
 # Set Sinatra variables
 set :app_file, __FILE__

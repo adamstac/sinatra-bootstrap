@@ -1,28 +1,34 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    compass (0.10.6)
-      haml (>= 3.0.4)
+    chunky_png (1.2.0)
+    compass (0.11.1)
+      chunky_png (~> 1.1)
+      fssm (>= 0.2.7)
+      sass (~> 3.1)
+    fssm (0.2.7)
     grid-coordinates (1.1.4)
       compass (>= 0.10.5)
-    haml (3.0.24)
+    haml (3.1.1)
     meyer-reset (2.0.0)
       compass (>= 0.10.5)
-    rack (1.2.2)
+    rack (1.3.0)
+    sass (3.1.2)
     shotgun (0.9)
       rack (>= 1.0)
-    sinatra (1.2.3)
+    sinatra (1.2.6)
       rack (~> 1.1)
       tilt (>= 1.2.2, < 2.0)
-    tilt (1.2.2)
+    tilt (1.3.2)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  compass (~> 0.10.6)
+  compass (~> 0.11.1)
   grid-coordinates (~> 1.1.4)
-  haml (~> 3.0)
+  haml (~> 3.1.1)
   meyer-reset (~> 2.0.0)
+  sass (~> 3.1.1)
   shotgun (~> 0.9)
   sinatra (~> 1.2.3)
