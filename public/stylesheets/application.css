@@ -55,16 +55,11 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
 a {
-  color: #36c;
+  color: #3366cc;
 }
 a:hover {
-  color: #36c;
+  color: #3366cc;
   text-decoration: none;
 }
 a:focus, a:active {
@@ -72,8 +67,8 @@ a:focus, a:active {
 }
 
 body {
-  font: 13px Arial,Helvetica,sans-serif;
-  background: #fff;
+  font: 13px Arial, Helvetica, sans-serif;
+  background: white;
   color: #0d0d0d;
 }
 body h1 {
@@ -94,7 +89,7 @@ body ul {
   -khtml-border-radius: 6px;
   border-radius: 6px;
   background: #e7e7e7;
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   margin-top: 10px;
   margin-left: 10px;
   margin-right: 10px;
@@ -105,7 +100,7 @@ body ul li {
   padding: 0 15px;
 }
 body ul li a {
-  color: #000;
+  color: black;
   text-decoration: none;
 }
 body ul li a:hover {
