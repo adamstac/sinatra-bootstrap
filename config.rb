@@ -3,7 +3,6 @@ require './app'
 # Compass Configuration
 
 require 'grid-coordinates'
-require 'meyer-reset'
 
 # Configuration to use when running within Sinatra
 project_path          = Sinatra::Application.root
