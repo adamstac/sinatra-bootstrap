@@ -31,4 +31,4 @@ line_comments         = false
 # CSS output style - :nested, :expanded, :compact, or :compressed
 output_style          = :expanded
 
-# Learn more: http://beta.compass-style.org/help/tutorials/configuration-reference/
+# Learn more: http://compass-style.org/help/tutorials/configuration-reference/
