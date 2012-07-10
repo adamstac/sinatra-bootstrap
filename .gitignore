@@ -2,3 +2,5 @@
 .sass-cache/
 .DS_Store
 tmp/**/*
+Gemfile.lock
+*.swp

@@ -2,7 +2,7 @@ require './app'
 
 # Compass Configuration
 
-require 'grid-coordinates'
+# require 'grid-coordinates'
 
 # Configuration to use when running within Sinatra
 project_path          = Sinatra::Application.root
@@ -20,7 +20,7 @@ images_dir            = File.join 'public', 'images'
 javascripts_dir       = File.join 'public', 'javascripts'
 
 # Syntax preference
-preferred_syntax      = :sass
+preferred_syntax      = :scss
 
 # Determine whether Compass generates relative or absolute paths
 relative_assets       = false
@@ -29,6 +29,6 @@ relative_assets       = false
 line_comments         = false
 
 # CSS output style - :nested, :expanded, :compact, or :compressed
-output_style          = :expanded
+output_style          = :compact
 
 # Learn more: http://beta.compass-style.org/help/tutorials/configuration-reference/
