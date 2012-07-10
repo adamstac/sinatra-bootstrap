@@ -1,9 +1,22 @@
 require 'rubygems'
 require 'sinatra'
 require 'haml'
+require 'coffee-script'
+require 'v8'
 
 # Helpers
 require './lib/render_partial'
+
+class CoffeeHandler < Sinatra::Base
+  set :views, File.dirname(__FILE__) + '/views/javascripts'
+
+  get '/javascripts/*.js' do
+    filename = params[:splat].first
+    coffee filename.to_sym
+  end
+end
+
+use CoffeeHandler
 
 # Set Sinatra variables
 set :app_file, __FILE__
