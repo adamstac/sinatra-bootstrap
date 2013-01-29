@@ -39,7 +39,7 @@ namespace :scripts do
       system "coffee -o public/javascripts/ -cj views/javascripts/"
     end
     
-    desc "Join and compile the scripts without closures"
+    desc "Compile the scripts without closures"
     task :bare => :clear do
       puts "*** Compiling scripts ***"
       system "coffee -o public/javascripts/ -cb views/javascripts/"
