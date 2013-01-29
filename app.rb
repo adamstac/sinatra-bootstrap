@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'sinatra'
 require 'haml'
+require 'coffee-script'
 
 # Helpers
 require './lib/render_partial'
