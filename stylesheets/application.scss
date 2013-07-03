@@ -1,0 +1,16 @@
+@import "compass/reset";
+@import "compass/utilities";
+@import "compass/css3";
+
+body {
+  font: 62.5% Arial, Helvetica, sans-serif;
+  background: #fff;
+  color: #0d0d0d;
+  padding: 50px;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+}

@@ -1,15 +1,11 @@
-!!!
+!!! 5
 %html{html_attrs}
   %head
     %meta{:'http-equiv' => "Content-Type", :content => "text/html; charset=utf-8"}
     %meta{:name => "lang", :content => "en"}
     %title Sinatra Bootstrap
     %link{:href=>'/stylesheets/application.css', :media => "screen", :rel => 'stylesheet', :type => "text/css"}
-    %script{:type => "text/javascript", :src => "http://code.jquery.com/jquery-1.5.min.js"}
-    %script{:type => "text/javascript", :src => "/javascripts/lib/modernizr-1.6.min.js"}
+    %script{:type => "text/javascript", :src => "//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"}
     %script{:type => "text/javascript", :src => "/javascripts/application.js"}
-    
   %body
-    = partial :_nav_main
     = yield
-    = partial :_analytics

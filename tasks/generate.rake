@@ -1,13 +1,17 @@
 desc 'Generate a new project at dir=foo'
 task :generate do
-  # Generate the new 'dir' if it's not already created
-  system "mkdir #{(ENV['dir'])}" unless File.exists?(ENV['dir'])
-  
-  # Archive the current HEAD to 'dir'
-  system "git archive HEAD | (cd #{ENV['dir']} && tar -xvf -)"
-  
-  # Remove this rake task from the newly generated project
-  system "cd #{ENV['dir']}; rm #{File.join("tasks", "generate.rake")}"
+  # Create the new directory
+  system "mkdir #{(ENV['dir'])}" # unless File.exists?(ENV['dir'])
 
-  puts "\n *** A new project has been generated at: #{(ENV['dir'])} ***"
+  # Copy this directory's contents to the new directory
+  system "cp -R * #{ENV['dir']}"
+
+  # Remove waste from the generated project
+  system "cd #{ENV['dir']}; rm -Rf .bundle .git .sass-cache #{File.join("tasks", "generate.rake")} Gemfile.lock readme.md"
+
+  # Add the readme back
+  system "cd #{ENV['dir']}; touch readme.md"
+
+  # Success!
+  puts "A copy of this project has been generated at: #{(ENV['dir'])}"
 end

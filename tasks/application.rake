@@ -1,4 +1,4 @@
-desc 'Start the application'
-task :start do
+desc 'Run the app'
+task :s do
   system "bundle exec shotgun config.ru"
 end
