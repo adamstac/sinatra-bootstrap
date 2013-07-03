@@ -1,5 +1,5 @@
-# Borrowed from Tanner Burson: http://github.com/tannerburson
-# http://github.com/adamstac/sinatra-plugins/blob/master/render_partial.rb
+# Thanks Tanner Burson
+# https://github.com/tannerburson/sinatra-plugins/blob/master/render_partial.rb
 
 module Sinatra
   module RenderPartial
@@ -7,6 +7,6 @@ module Sinatra
       haml page, options.merge!(:layout => false)
     end
   end
- 
+
   helpers RenderPartial
 end
