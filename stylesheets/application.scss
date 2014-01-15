@@ -2,6 +2,11 @@
 @import "compass/utilities";
 @import "compass/css3";
 
+// customize bootstrap variables here:
+@import "variables";
+@import "bootstrap";
+
+
 body {
   font: 62.5% Arial, Helvetica, sans-serif;
   background: #fff;

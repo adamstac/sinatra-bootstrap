@@ -8,6 +8,7 @@ Sinatra Bootstrap supports:
 * [Sass](http://sass-lang.com/)
 * [Compass](https://github.com/chriseppstein/compass)
 * [jQuery](http://jquery.com/)
+* [Twitter Bootstrap (Sass)](https://github.com/twbs/bootstrap-sass)
 
 ## What is the purpose of Sinatra Bootstrap?
 

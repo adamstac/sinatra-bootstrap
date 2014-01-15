@@ -8,3 +8,6 @@ gem 'haml'
 # Sass & Compass
 gem 'sass'
 gem 'compass'
+
+#Twitter Bootstrap
+gem 'bootstrap-sass'
