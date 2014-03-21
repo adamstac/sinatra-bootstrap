@@ -6,6 +6,10 @@ require_relative 'helpers/render_partial'
 
 class SinatraBootstrap < Sinatra::Base
   helpers RenderPartial
+  
+  configure do
+    $stdout.sync = true
+  end
 
   get '/' do
     haml :index
