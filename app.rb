@@ -2,8 +2,14 @@ require 'rubygems'
 require 'sinatra/base'
 require 'haml'
 
+require_relative 'helpers/render_partial'
+
 class SinatraBootstrap < Sinatra::Base
-  require './helpers/render_partial'
+  helpers RenderPartial
+  
+  configure do
+    $stdout.sync = true
+  end
 
   get '/' do
     haml :index

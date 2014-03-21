@@ -3,5 +3,3 @@ module RenderPartial
     haml page, options.merge!(:layout => false)
   end
 end
-
-helpers RenderPartial

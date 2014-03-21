@@ -2,3 +2,4 @@
 .sass-cache/
 .DS_Store
 tmp/**/*
+.env

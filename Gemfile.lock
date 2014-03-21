@@ -1,6 +1,8 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    bootstrap-sass (3.0.3.0)
+      sass (~> 3.2)
     chunky_png (1.2.8)
     compass (0.12.2)
       chunky_png (~> 1.2)
@@ -26,6 +28,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap-sass
   compass
   haml
   rake
