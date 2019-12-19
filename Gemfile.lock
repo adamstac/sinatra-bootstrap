@@ -9,7 +9,7 @@ GEM
     fssm (0.2.10)
     haml (4.0.3)
       tilt
-    rack (1.5.2)
+    rack (1.6.12)
     rack-protection (1.5.0)
       rack
     rake (10.1.0)
